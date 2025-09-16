@@ -1,0 +1,82 @@
+Solicode@salle MINGW64 ~
+$ mkdir projet-git
+
+Solicode@salle MINGW64 ~
+$ ^[[200~cd projet-git
+bash: $'\E[200~cd': command not found
+
+Solicode@salle MINGW64 ~
+$ cd projet-git
+
+Solicode@salle MINGW64 ~/projet-git
+$ git init
+Initialized empty Git repository in C:/Users/Solicode/projet-git/.git/
+
+Solicode@salle MINGW64 ~/projet-git (master)
+$ git config --global user.name "alae maghchich"
+
+Solicode@salle MINGW64 ~/projet-git (master)
+$ git config --global user.email "alaemaghchich2004@gmail.com"
+
+Solicode@salle MINGW64 ~/projet-git (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Solicode@salle MINGW64 ~/projet-git (master)
+$ touch index.html
+
+Solicode@salle MINGW64 ~/projet-git (master)
+$ git add index.html
+
+Solicode@salle MINGW64 ~/projet-git (master)
+$ git commit -m create fichier index.html
+error: pathspec 'fichier' did not match any file(s) known to git
+
+Solicode@salle MINGW64 ~/projet-git (master)
+$ git commit -m "create fichier index.html"
+[master (root-commit) 04b6612] create fichier index.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+Solicode@salle MINGW64 ~/projet-git (master)
+$ git log
+commit 04b6612404a4712ace0a7d22806f1eb8cbd89b75 (HEAD -> master)
+Author: alae maghchich <alaemaghchich2004@gmail.com>
+Date:   Tue Sep 16 13:11:28 2025 +0100
+
+    create fichier index.html
+
+Solicode@salle MINGW64 ~/projet-git (master)
+$ git remote add origin https://github.com/alaemaghchich/mon-projet-git.git
+
+Solicode@salle MINGW64 ~/projet-git (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 224 bytes | 224.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/alaemaghchich/mon-projet-git/pull/new/master
+remote:
+To https://github.com/alaemaghchich/mon-projet-git.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Solicode@salle MINGW64 ~/projet-git (master)
+$ git push -u origin master
+branch 'master' set up to track 'origin/master'.
+Everything up-to-date
+
+Solicode@salle MINGW64 ~/projet-git (master)
+$ git push -u origin master
+branch 'master' set up to track 'origin/master'.
+Everything up-to-date
+
+Solicode@salle MINGW64 ~/projet-git (master)
+$ git config --global user.name "alae maghchich"^C
